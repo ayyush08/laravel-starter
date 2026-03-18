@@ -144,6 +144,3 @@ php artisan route:list
 - Speeds up development
 - Helps manage project efficiently
 
-
-## File Summary
-- resources/views/ → views are for displaying data to users (the frontend)
