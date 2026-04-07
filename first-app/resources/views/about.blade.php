@@ -1,3 +1,4 @@
-<h1>About</h1>
+@include('common.header')
+<h1>About Page</h1>
 
-<h1>{{ $id }}</h1>
+@include('common.inner',['page'=>'This is the about page.'])

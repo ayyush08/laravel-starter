@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\User;
 
@@ -29,3 +30,8 @@ Route::get('/user',[User::class,'getUser']); // This route will call the getUser
 Route::get('/username/{username}',[User::class,'getUsername']); // This route will call the getUsername method of the User controller when the /username URL is accessed. The {username} is a route parameter that will be passed to the getUsername method.
 
 Route::get('/admin',[User::class,'adminLogin']); // This route will call the adminLogin method of the User controller when the /admin URL is accessed.
+
+
+Route::get('/user-home',[UserController::class,'userHome']); // This route will call the userHome method of the UserController when the /user-home URL is accessed.
+
+Route::get('/user-about',[UserController::class,'userAbout']); 
